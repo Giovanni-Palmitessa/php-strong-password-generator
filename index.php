@@ -17,7 +17,10 @@
 
         <div class="card">
             <div class="card-body">
-
+                <form action="">
+                    <label for="password">Lunghezza password:</label>
+                    <input type="number" class="form-control" id="password" name="password" placeholder="Inserisci un numero...">
+                </form>
             </div>
         </div>
     </div>
