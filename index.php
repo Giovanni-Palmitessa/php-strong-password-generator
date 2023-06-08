@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +10,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous" defer></script>
     <link rel="stylesheet" href="/assets/style.css">
 </head>
+
 <body>
-    <div class="container"></div>
+    <div class="container">
+        <h1>Strong Password generator</h1>
+
+        <div class="card">
+            <div class="card-body">
+
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
