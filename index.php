@@ -1,6 +1,6 @@
 <?php
 $characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!?$%€&*#';
-$password_length = isset($_GET['password']) ?? '';
+$password_length = isset($_GET['password']) ? intval($_GET['password']) : 0;;
 ?>
 
 <!DOCTYPE html>
