@@ -1,6 +1,12 @@
 <?php
 $characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!?$%€&*#';
 $password_length = isset($_GET['password']) ? intval($_GET['password']) : 0;;
+
+if ($password_length > 0) {
+    $password = substr(str_shuffle($characters), 0, $password_length);
+} elseif ($password_length === 0) {
+    $password = 'Non hai inserito nessun numero. Inserisci per generare la password';
+};
 ?>
 
 <!DOCTYPE html>
@@ -29,6 +35,8 @@ $password_length = isset($_GET['password']) ? intval($_GET['password']) : 0;;
 
                     <button type="submit" class="btn btn-primary">Genera</button>
                 </form>
+
+                <h2 class="text-center pt-3"><?= $password; ?></h2>
             </div>
         </div>
     </div>
